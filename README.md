@@ -15,6 +15,7 @@ A copy of the telegram bot @LivegramBot, only the basic functions
 ![imagen](https://user-images.githubusercontent.com/75285480/129973173-90f4eaea-129f-4f4a-a5a1-781839e25813.png)
 	
 	On that site
+
 **2- Luego ve al bot @MissRose_bot y al iniciarlo enviale el comando /id **
 
 	And they copy the ID you give them and paste it into the file where it says $send
