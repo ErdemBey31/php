@@ -21,7 +21,7 @@ $send = '5333072972'; // ID of where the messages were sent
 #===============[CMDS]================#
 
 if($message == '/start' || $message == '!start' || $message == '.start'){
-    sendMessage($chatId, "Merhaba $firstname, "Ben, Bir İletişim Botuyum\n\nDaha Fazlası: @MurtiGram\nID: $userId", $message_id);
+    sendMessage($chatId, "<b>Merhaba $firstname , Ben, Bir İletişim Botuyum.\nDaha Fazlası: @MurtiGram\nID: $userId</b>", $message_id);
 }
 
 if($chatId == $send){
