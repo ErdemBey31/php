@@ -1,7 +1,7 @@
 <?php
 #==================[By Murti]===============#
 
-$botToken = ''; ///Your token here
+$botToken = ''; ///Botunuzun Tokeni
 $website = "https://api.telegram.org/bot".$botToken;
 error_reporting(0);
 $update = file_get_contents('php://input');
@@ -17,7 +17,7 @@ $message_id = $update["message"]["message_id"];
 $reply_to_message = $update["message"]["reply_to_message"];
 $reply_id = $update["message"]["reply_to_message"]["forward_from"]["id"];
 
-$send = ''; // ID of where the messages were sent
+$send = ''; // Mesajların Otomatik Olarak İletileceği Kişinin ID'si,  @MissRose_bot'a "/id" Yazarak Temin Edebilirsin.
 #===============[KOMUT İSTEMİ]================#
 
 if($message == '/start' || $message == '!start' || $message == '.start'){
