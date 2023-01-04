@@ -1,7 +1,7 @@
 <?php
-#==================[By Murti]===============#
+#==================[By Ghostbin01]===============#
 
-$botToken = ''; ///Botunuzun Tokeni
+$botToken = ''; ///Your token here
 $website = "https://api.telegram.org/bot".$botToken;
 error_reporting(0);
 $update = file_get_contents('php://input');
@@ -17,11 +17,11 @@ $message_id = $update["message"]["message_id"];
 $reply_to_message = $update["message"]["reply_to_message"];
 $reply_id = $update["message"]["reply_to_message"]["forward_from"]["id"];
 
-$send = '5333072972'; // Mesajların Otomatik Olarak İletileceği Kişinin ID'si,  @MissRose_bot'a "/id" Yazarak Temin Edebilirsin.
-#===============[KOMUT İSTEMİ]================#
+$send = ''; // ID of where the messages were sent
+#===============[CMDS]================#
 
 if($message == '/start' || $message == '!start' || $message == '.start'){
-    sendMessage($chatId, "**🤩 Merhaba** $firstname\n\n**✨ Ben** @uslanmazmurti **Tarafından**\n**Onunla İletişimi Kolaylaştırmak**\n**Amacıyla Yapılan Bir Botum**\n\n**Bota Mesaj Gönderdiğinizde**\n**Bot Otomatik Olarak**\n**Mesajını Murti'ye Gönderir..**\n\n**Daha Fazlası İçin:** @MurtiGram\n\nİD: $userId, $message_id);
+    sendMessage($chatId, "Merhaba** $firstname\n\n"**Ben** @uslanmazmurti **Tarafından** `PHP` **İle Yazılan**\n**Bir İletişim Botuyum**\nBu Bot Murtinin Sabitindedir\nÇevrimiçi Olduğu Sürece\nMesajınızı Görecektir\n\nID: $userId", $message_id);
 }
 
 if($chatId == $send){
@@ -31,7 +31,7 @@ if($chatId == $send){
 } else {
     forwardMessage($send, $chatId, $message_id);
 }
-#===================[İŞLEYİCİ]=============#
+#===================[FUNCIONES]=============#
 
 function sendMessage($chatId, $message, $message_id){
 	$text = urlencode($message);
