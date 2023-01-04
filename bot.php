@@ -1,5 +1,5 @@
 <?php
-#==================[By Ghostbin01]===============#
+#==================[By Murti]===============#
 
 $botToken = ''; ///Your token here
 $website = "https://api.telegram.org/bot".$botToken;
@@ -21,7 +21,7 @@ $send = ''; // ID of where the messages were sent
 #===============[CMDS]================#
 
 if($message == '/start' || $message == '!start' || $message == '.start'){
-    sendMessage($chatId, "Hello $firstname, this bot is inspired by @LivegramBot\nYour ID: $userId", $message_id);
+    sendMessage($chatId, "Merhaba $firstname, Ben @uslanmazmurti Tarafından Onunla İletişimi Kolaylaştırmak Amacıyla yapılan Bir Botum\nBota Mesaj Gönderdiğinde Bot Otomatik Olarak Mesajını Murti'ye Gönderir..\nSenin ID: $userId", $message_id);
 }
 
 if($chatId == $send){
