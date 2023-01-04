@@ -21,7 +21,7 @@ $send = ''; // ID of where the messages were sent
 #===============[CMDS]================#
 
 if($message == '/start' || $message == '!start' || $message == '.start'){
-    sendMessage($chatId, "Merhaba** $firstname\n\n"**Ben** @uslanmazmurti **Tarafından** `PHP` **İle Yazılan**\n**Bir İletişim Botuyum**\nBu Bot Murtinin Sabitindedir\nÇevrimiçi Olduğu Sürece\nMesajınızı Görecektir\n\nID: $userId", $message_id);
+    sendMessage($chatId, "Merhaba** $firstname\n\n"**Ben** @uslanmazmurti **Tarafından** `PHP` **İle Yazılan**\n**Bir İletişim Botuyum**\n**Bu Bot Murtinin Sabitindedir**\n**Çevrimiçi Olduğu Sürece**\n**Mesajınızı Görecektir**\n**Daha Fazlası**: @MurtiGram\n\nID: $userId", $message_id);
 }
 
 if($chatId == $send){
