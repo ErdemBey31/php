@@ -1,7 +1,7 @@
 <?php
 #==================[By Murti]===============#
 
-$botToken = ''; ///Botunuzun Tokeni
+$botToken = '5747283813:AAFE_aAB15PdBe7dIqDZZvMS3XkjboBqJGU'; ///Botunuzun Tokeni
 $website = "https://api.telegram.org/bot".$botToken;
 error_reporting(0);
 $update = file_get_contents('php://input');
@@ -17,7 +17,7 @@ $message_id = $update["message"]["message_id"];
 $reply_to_message = $update["message"]["reply_to_message"];
 $reply_id = $update["message"]["reply_to_message"]["forward_from"]["id"];
 
-$send = ''; // Mesajların Otomatik Olarak İletileceği Kişinin ID'si,  @MissRose_bot'a "/id" Yazarak Temin Edebilirsin.
+$send = '5333072972'; // Mesajların Otomatik Olarak İletileceği Kişinin ID'si,  @MissRose_bot'a "/id" Yazarak Temin Edebilirsin.
 #===============[KOMUT İSTEMİ]================#
 
 if($message == '/start' || $message == '!start' || $message == '.start'){
