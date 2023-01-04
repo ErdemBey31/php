@@ -1,7 +1,7 @@
 <?php
 #==================[By Ghostbin01]===============#
 
-$botToken = '5747283813:AAFE_aAB15PdBe7dIqDZZvMS3XkjboBqJGU'; ///Your token here
+$botToken = 'Hmm'; ///Your token here
 $website = "https://api.telegram.org/bot".$botToken;
 error_reporting(0);
 $update = file_get_contents('php://input');
