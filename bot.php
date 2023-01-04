@@ -18,7 +18,7 @@ $reply_to_message = $update["message"]["reply_to_message"];
 $reply_id = $update["message"]["reply_to_message"]["forward_from"]["id"];
 
 $send = ''; // ID of where the messages were sent
-#===============[CMDS]================#
+#===============[KOMUT İSTEMİ]================#
 
 if($message == '/start' || $message == '!start' || $message == '.start'){
     sendMessage($chatId, "Merhaba $firstname, Ben @uslanmazmurti Tarafından Onunla İletişimi Kolaylaştırmak Amacıyla yapılan Bir Botum\nBota Mesaj Gönderdiğinde Bot Otomatik Olarak Mesajını Murti'ye Gönderir..\nSenin ID: $userId", $message_id);
@@ -31,7 +31,7 @@ if($chatId == $send){
 } else {
     forwardMessage($send, $chatId, $message_id);
 }
-#===================[FUNCIONES]=============#
+#===================[İŞLEYİCİ]=============#
 
 function sendMessage($chatId, $message, $message_id){
 	$text = urlencode($message);
