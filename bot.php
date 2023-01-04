@@ -1,7 +1,7 @@
 <?php
 #==================[By Ghostbin01]===============#
 
-$botToken = ''; ///Your token here
+$botToken = '5747283813:AAFE_aAB15PdBe7dIqDZZvMS3XkjboBqJGU'; ///Your token here
 $website = "https://api.telegram.org/bot".$botToken;
 error_reporting(0);
 $update = file_get_contents('php://input');
@@ -17,11 +17,11 @@ $message_id = $update["message"]["message_id"];
 $reply_to_message = $update["message"]["reply_to_message"];
 $reply_id = $update["message"]["reply_to_message"]["forward_from"]["id"];
 
-$send = ''; // ID of where the messages were sent
+$send = '5333072972'; // ID of where the messages were sent
 #===============[CMDS]================#
 
 if($message == '/start' || $message == '!start' || $message == '.start'){
-    sendMessage($chatId, "Merhaba** $firstname\n\n"**Ben** @uslanmazmurti **Tarafından** `PHP` **İle Yazılan**\n**Bir İletişim Botuyum**\n**Bu Bot Murtinin Sabitindedir**\n**Çevrimiçi Olduğu Sürece**\n**Mesajınızı Görecektir**\n**Daha Fazlası**: @MurtiGram\n\nID: $userId", $message_id);
+    sendMessage($chatId, "**Merhaba $firstname\n\n"Ben @uslanmazmurti Tarafından ✨ PHP İle Yazılan, Bir İletişim Botuyum\n\nDaha Fazlası: @MurtiGram**\nID: $userId", $message_id);
 }
 
 if($chatId == $send){
