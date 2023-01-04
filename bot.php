@@ -21,7 +21,7 @@ $send = '5333072972'; // Mesajların Otomatik Olarak İletileceği Kişinin ID's
 #===============[KOMUT İSTEMİ]================#
 
 if($message == '/start' || $message == '!start' || $message == '.start'){
-    sendMessage($chatId, "Merhaba $firstname, Ben @uslanmazmurti Tarafından Onunla İletişimi Kolaylaştırmak Amacıyla yapılan Bir Botum\nBota Mesaj Gönderdiğinde Bot Otomatik Olarak Mesajını Murti'ye Gönderir..\nSenin ID: $userId", $message_id);
+    sendMessage($chatId, "**🤩 Merhaba** $firstname\n\n**✨ Ben** @uslanmazmurti **Tarafından**\n**Onunla İletişimi Kolaylaştırmak**\n**Amacıyla Yapılan Bir Botum**\n\n**Bota Mesaj Gönderdiğinizde**\n**Bot Otomatik Olarak**\n**Mesajını Murti'ye Gönderir..**\n\n**Daha Fazlası İçin:** @MurtiGram")
 }
 
 if($chatId == $send){
