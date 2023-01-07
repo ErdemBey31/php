@@ -19,6 +19,17 @@ $reply_id = $update["message"]["reply_to_message"]["forward_from"]["id"];
 
 $send = 'SAHİP_ID'; // Botun Sahibinin İD'si
 #===============[KOMUT İSTEMİ]================#
+$inlinebutton = [
+    'inline_keyboard' => [
+        [
+            ['text' => "\xF0\x9F\x99\x8B Developer", 'url' => 'https://t.me/uslanmazmurti'],
+            ['text' => "\xF0\x9F\x94\x94 Tüm Linklerimiz", 'url' => 'https://t.me/MurtiGram']
+        ],
+        [
+            ['text' => "\xE2\x9E\x95 Oyun & Film Botu", 'url' => 'https://t.me/inekgame_bot']
+        ],
+    ]
+];
 
 if($message == '/start' || $message == '!start' || $message == '.start'){
     sendMessage($chatId, "Merhaba $firstname , Ben, @uslanmazmurti Tarafından Yazılan Bir İletişim Botuyum.\n\nDaha Fazlası: @MurtiGram\nID: $userId", $message_id);
